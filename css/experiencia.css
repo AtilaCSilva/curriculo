@@ -1,0 +1,128 @@
+.experiencia {
+  margin-top: 120px;
+}
+
+.experiencia .subtitle{
+  color: #cecece;
+}
+
+.experiencia-text {
+  font-size: 1.25rem;
+  line-height: 32px;
+  margin-bottom: 60px;
+  max-width: 40ch;
+color: #444;
+}
+
+.experiencia-text strong {
+  color: #333;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 109px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #F8F8F8;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  position: relative;
+}
+
+
+.projects::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(180deg, #31BDDC 0%, #1A88C6 100%);
+  border-radius: 5px;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  z-index: 1;
+}
+
+
+.project-year {
+  font-size: 0.875rem;
+  color: #444444;
+  text-align: right;
+  width: 50px;
+  
+  position: absolute;
+  top: 20px;
+  left: -80px;
+  
+  
+}
+
+.project-title {
+  color: #1B1B1B;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.1;
+  position: relative;
+  z-index: 2;
+}
+
+
+.project-text {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  gap: 10px;
+}
+
+.project-skills li {
+font-size: .875rem;
+line-height: 1.4;
+padding: 5px 10px;
+background-color: white;
+border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    margin-top: 30px;
+
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia .subtitle{
+    color: #1B1B1B;
+  }
+
+  .experiencia-text {
+    font-size: 1.25rem;
+  }
+
+  .project-year {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+
+  .project-year::before {
+    content: "Ano: ";
+    color: #1b1b1b;
+  }
+}
+
+@media (max-width: 400px) {
+  .experiencia {
+    margin-top: 20px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}

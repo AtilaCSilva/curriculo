@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: 'Fira Sans', Arial, sans-serif ;
+  color: #1B1B1B;
+}
+
+
+p,h1, h2, h3, p {
+  margin: 0;
+} 
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  pad: 40px 20px ;
+  margin: 0 auto;
+  
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 150px;
+}
+
+.subtitle {
+  font-size: 8rem;
+  word-break: break-all;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 4ch;
+}
+
+
+@media (max-width: 800px) {
+  .subtitle {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+
+}
