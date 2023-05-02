@@ -34,7 +34,7 @@ align-items: center;
 
 .footer-copy {
   font-size: 1.125rem;
-  color: #686868;
+  color: #9F9F9F;
 
   grid-column: 1/ -3;
 }
